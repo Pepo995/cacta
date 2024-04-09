@@ -1,0 +1,14 @@
+{
+  "extends": ["//"],
+  "pipeline": {
+    "dev": {
+      "dependsOn": ["^db:generate"],
+      "persistent": true,
+      "cache": false
+    },
+    "deploy": {
+      "dependsOn": ["^db:generate"],
+      "cache": false
+    }
+  }
+}

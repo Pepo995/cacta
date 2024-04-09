@@ -1,0 +1,38 @@
+{
+  "name": "@cacta/admin",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm tsup",
+    "dev": "IS_OFFLINE=true pnpm tsup --watch --onSuccess \"pnpm with-env node dist/app.js\"",
+    "start": "pnpm with-env node dist/app.js",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@adminjs/express": "^6.1.0",
+    "@adminjs/passwords": "^4.0.0",
+    "@adminjs/prisma": "^5.0.1",
+    "@adminjs/upload": "CACTA-eco/adminjs-upload#master",
+    "@cacta/db": "*",
+    "@cacta/email": "*",
+    "@paralleldrive/cuid2": "2.2.2",
+    "adminjs": "^7.4.1",
+    "bcryptjs": "^2.4.3",
+    "connect-pg-simple": "^9.0.1",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.3",
+    "tslib": "^2.6.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@t3-oss/env-core": "^0.7.1",
+    "@types/connect-pg-simple": "^7.0.3",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.17.10",
+    "tsup": "^8.0.1"
+  }
+}

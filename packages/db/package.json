@@ -1,0 +1,27 @@
+{
+  "name": "@cacta/db",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "db:deploy": "pnpm with-env prisma migrate deploy",
+    "db:generate": "pnpm with-env prisma generate",
+    "db:migrate": "pnpm with-env prisma migrate dev",
+    "db:push": "pnpm with-env prisma db push",
+    "db:reset": "pnpm with-env prisma migrate reset",
+    "db:seed": "pnpm with-env prisma db seed",
+    "db:studio": "pnpm with-env prisma studio",
+    "postinstall": "pnpm db:generate",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/mockedDataSeed.ts"
+  }
+}

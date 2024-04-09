@@ -1,0 +1,10 @@
+
+> @cacta/nextjs@1.0.0 lint /Users/felipeborras/Desktop/cacta-platform/apps/nextjs
+> next lint --no-cache
+
+
+./src/server/api/routers/download.ts
+45:13  Warning: 'organizationId' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+47:13  Warning: 'organizationCampaignEngineId' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules

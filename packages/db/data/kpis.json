@@ -1,0 +1,171 @@
+[
+  {
+    "name": {
+      "en": "Total Carbon Footprint",
+      "es": "Huella de Carbono Total"
+    },
+    "description": {
+      "en": "The carbon footprint is an indicator of the impact of global warming due to human activity. It is defined by the relationship between the accumulated radiative forcing of greenhouse gases over 100 years, specifically concerning carbon dioxide. The observed effects of this phenomenon include increased atmospheric and ocean temperatures, glacier melting, rising sea levels, heat waves, and other extreme weather events. Nitrous oxide (N2O) emissions, associated with fertilizer use, significantly contribute to the carbon footprint in the agricultural sector.",
+      "es": "La huella de carbono es un indicador del efecto del calentamiento global debido a la actividad humana. Consiste en la relación entre el forzamiento radiativo acumulado en 100 años de los gases de efecto invernadero respecto al dióxido de carbono. Los efectos observados por este fenómeno incluyen el aumento de la temperatura atmosférica, aumento de la temperatura de los océanos, derretimiento de glaciares, aumento de los niveles del mar, olas de calor, eventos climáticos extremos, entre otros. Las emisiones de N2O, relacionadas al uso de fertilizantes son un gran contribuyente en el sector agrícola."
+    },
+    "unit": "kg CO₂ eq",
+    "category": "ClimateChange",
+    "key": "TotalCarbonFootprint"
+  },
+  {
+    "name": {
+      "en": "Potential Acidification",
+      "es": "Acidificación Potencial"
+    },
+    "description": {
+      "en": "The acidification of ecosystems leads to a reduction in the availability of substances capable of neutralizing hydrogen ions, resulting in the loss of “Acid Neutralization Capacity“. The most significant compounds of human origin contributing to acidification include sulfur oxides, nitrogen oxides, ammonia, and strong acids.",
+      "es": "La acidificación de los ecosistemas se traduce en la disminución en la cantidad de sustancias que pueden neutralizar los iones de hidrógeno, perdiendo así la “Capacidad de Neutralización Ácida”. Los compuestos de orígen humano más relevantes en la acidificación son los óxidos de azufre, óxidos de nitrógeno, amoníaco y ácidos fuertes."
+    },
+    "unit": "mol H+ eq",
+    "category": "EcosystemQuality",
+    "key": "PotentialAcidification"
+  },
+  {
+    "name": {
+      "en": "Water Eutrophication",
+      "es": "Eutrofización del Agua"
+    },
+    "description": {
+      "en": "Eutrophication is the process wherein the aquatic environment becomes enriched with nutrients, resulting in an elevated production of planktonic algal biomass. This, in turn, leads to a degradation of water quality, manifested in changes to its color, odor, and taste. Ultimately, this process may give rise to the proliferation of toxic phytoplankton, cyanobacteria, or blue-green algae. Upon their demise, these organisms consume oxygen in the system, leading to hypoxia. If unabated, this progression can transform a lake into a swamp. In aquatic systems, an excess of phosphorus or nitrogen serves as the catalyst for this environmental impact. Typically, the excessive use of fertilizers is the root cause of this issue.",
+      "es": "La Eutrofización describe el enriquecimiento del entorno acuático con nutrientes, lo que conduce a una mayor producción de biomasa de algas planctónicas que a su vez produce una degradación de la calidad del agua que se evidencia en su color, olor y sabor. Eventualmente puede dar lugar al desarrollo de fitoplancton tóxico, cianobacterias o algas verde-azuladas que al morir consumirá el oxígeno del sistema (hipoxia). Si el proceso continúa, el lago se convertirá en un pantano. En los sistemas acuáticos, el exceso de fósforo o nitrógeno es el desencadenante de este impacto ambiental. Un excesivo uso de fertilizantes, por lo tanto, suele ser la causa de este problema."
+    },
+    "unit": "kg P eq",
+    "category": "EcosystemQuality",
+    "key": "WaterEutrophication"
+  },
+  {
+    "name": {
+      "en": "Water Ecotoxicity",
+      "es": "Ecotoxicidad del Agua"
+    },
+    "description": {
+      "en": "”All substances are toxic. The right dose differentiates the poison from the remedy.” This definition by Paracelsus, articulated over 500 years ago, remains relevant today. The toxic impact of a substance is contingent upon factors such as the quantity released, its mobility, persistence, exposure pattern, and inherent toxicity. The use of agrochemicals stands out as a primary contributor to the toxicity of agricultural ecosystems. Mitigating this impact involves measures such as reducing the dose, concentration, or altering the active ingredient.",
+      "es": "”Todas las sustancias son tóxicas. La dosis justa diferencia el veneno del remedio”. Esta definición de Paracelsus hace más de 500 años sigue vigente aún hoy. El impacto tóxico de una sustancia depende de la cantidad emitida, su movilidad, su persistencia, el patrón de exposición y su toxicidad. El uso de agroquímicos es uno de los principales responsables de la toxicidad de los ecosistemas de la agricultura. Disminuir su dosis, concentración o cambiar de ingrediente activo son algunas medidas para reducir el impacto."
+    },
+    "unit": "CTUe",
+    "category": "EcosystemQuality",
+    "key": "WaterEcotoxicity"
+  },
+  {
+    "name": {
+      "en": "Carcinogenic",
+      "es": "Cancerígenos"
+    },
+    "description": {
+      "en": "In the realm of human toxicity models, much like in ecotoxicity, various driving parameters come into play. The distinction lies in focusing solely on substances that are toxic to humans. Furthermore, these models differentiate between carcinogenic and non-carcinogenic substances. The utilization of agrochemicals is closely linked to these specific indicators.",
+      "es": "Al igual que en Ecotoxicidad, los modelos de toxicidad humana dependen de distintos parámetros impulsores. La diferencia está en la consideración únicamente de las sustancias tóxicas para el humano. Se distinguen además las sustancias cancerígenas de las no cancerígenas. El uso de agroquímicos está fuertemente relacionado con estos indicadores."
+    },
+    "unit": "CTUh",
+    "category": "HumanHealth",
+    "key": "Carcinogenic"
+  },
+  {
+    "name": {
+      "en": "Non-Carcinogenic",
+      "es": "No Cancerígenos"
+    },
+    "description": {
+      "en": "In the realm of human toxicity models, much like in ecotoxicity, various driving parameters come into play. The distinction lies in focusing solely on substances that are toxic to humans. Furthermore, these models differentiate between carcinogenic and non-carcinogenic substances. The utilization of agrochemicals is closely linked to these specific indicators.",
+      "es": "Al igual que en Ecotoxicidad, los modelos de toxicidad humana dependen de distintos parámetros impulsores. La diferencia está en la consideración únicamente de las sustancias tóxicas para el humano. Se distinguen además las sustancias cancerígenas de las no cancerígenas. El uso de agroquímicos está fuertemente relacionado con estos indicadores."
+    },
+    "unit": "CTUh",
+    "category": "HumanHealth",
+    "key": "NonCarcinogenic"
+  },
+  {
+    "name": {
+      "en": "Ozone Depletion",
+      "es": "Agotamiento de Ozono"
+    },
+    "description": {
+      "en": "Stratospheric ozone plays a crucial role in sustaining life on our planet by absorbing UV radiation. The depletion of this ozone layer, often referred to as the ”ozone layer hole,” has both direct and indirect effects on human health. On one hand, it contributes to an elevation in UV-B radiation, with the potential to induce conditions such as skin cancer, cataracts, premature aging, and other related health issues. Moreover, the depletion accelerates the formation of highly detrimental photochemical smog, as indicated in the Smog indicator.",
+      "es": "El ozono estratosférico es vital para la vida en el planeta, debido a que absorbe la radiación UV. Su agotamiento, conocido como el “agujero de la capa de ozono” tiene un efecto directo e indirecto en la salud de los humanos. Por un lado promueve el aumento de la radiación UV-B, con la potencialidad de la causa de cáncer de piel, cataratas, envejecimiento, entre otros. Adicionalmente, acelera la formación de smog fotoquímico (ver indicador Smog), altamente dañino."
+    },
+    "unit": "kg CFC-11 eq",
+    "category": "HumanHealth",
+    "key": "OzoneDepletion"
+  },
+  {
+    "name": {
+      "en": "Smog",
+      "es": "Smog"
+    },
+    "description": {
+      "en": "Photochemical smog refers to the impact of ozone and other reactive oxygenated compounds formed from the oxidation of volatile organic compounds (VOCs) or carbon monoxide in the presence of nitrogen oxides, under the influence of sunlight. Hence the name summer smog. When inhaling these compounds, they come into contact with the respiratory tract, damaging tissues and causing respiratory diseases.",
+      "es": "El smog fotoquímico se refiere al impacto del ozono y otros compuestos reactivos oxigenados formados a partir de la oxidación de los compuestos orgánicos volátiles (VOCs) o monóxido de carbono en presencia de óxidos de nitrógeno, bajo la influencia de la luz solar. De allí el nombre smog de verano. Al inhalar estos compuestos, los mismos entran en contacto con el tracto respiratorio dañando tejidos y causando enfermedades respiratorias."
+    },
+    "unit": "kg NMVOC eq",
+    "category": "HumanHealth",
+    "key": "Smog"
+  },
+  {
+    "name": {
+      "en": "Use of Electricity",
+      "es": "Uso de Electricidad"
+    },
+    "description": {
+      "en": "While the utilization of electricity may not inherently generate an impact, its monitoring and optimization contribute to the indirect reduction of other environmental impacts. The extent of this reduction relies on the energy sources employed for electricity generation, with a notable distinction between renewable and non-renewable sources, as well as self-generated and network sources.",
+      "es": "Si bien el uso de electricidad no representa un impacto en sí mismo, su seguimiento y optimización ayuda a reducir indirectamente otros impactos ambientales. Esto dependerá de las fuentes de energía utilizadas para su generación. Se distinguen fuentes renovables de no renovables, autogeneradas o de red."
+    },
+    "unit": "kWh",
+    "category": "ResourcesExhaustion",
+    "key": "UseOfElectricity"
+  },
+  {
+    "name": {
+      "en": "Non-Renewable",
+      "es": "No Renovables"
+    },
+    "description": {
+      "en": "This indicator pertains to the utilization of non-renewable energy sources necessary for input production. The primary sources encompass fossil fuels and uranium.",
+      "es": "Este indicador se refiere al uso de fuentes de energía no renovables requeridas para la producción de los insumos. Las principales fuentes son los combustibles fósiles y el uranio."
+    },
+    "unit": "MJ",
+    "category": "ResourcesExhaustion",
+    "key": "NonRenewables"
+  },
+  {
+    "name": {
+      "en": "Minerals and Metals",
+      "es": "Minerales y Metales"
+    },
+    "description": {
+      "en": "The depletion of non-fossil resources has the consequence of impacting the availability of resources for future generations. The quantification of this indicator is determined based on the theoretical reserves of resources, their accessibility and the rate of exploitation, expressed in units of equivalent metal.",
+      "es": "El agotamiento de los recursos no fósiles tiene como consecuencia el impacto en la disponibilidad de recursos de futuras generaciones. La cuantificación de este indicador se determina en función de las reservas teóricas de recursos, su accesibilidad y el ritmo de explotación, expresándose en unidades de metal equivalente."
+    },
+    "unit": "kg Sb eq",
+    "category": "ResourcesExhaustion",
+    "key": "MineralsAndMetals"
+  },
+  {
+    "name": {
+      "en": "Water Footprint",
+      "es": "Huella Hídrica"
+    },
+    "description": {
+      "en": "The water footprint is defined as the amount of water needed for crop growth. This measurement distinguishes between the use of freshwater, termed the blue water footprint, and rainwater, known as the green water footprint. The green water footprint is calculated based on the daily evapotranspiration of crops.",
+      "es": "Se define como huella hídrica al agua requerida para el crecimiento de los cultivos. Para ello se distingue el uso de agua dulce, conocida como huella hídrica azul y la proveniente del agua de lluvia, o huella hídrica verde. Esta última se determina a partir del cálculo de la evapotranspiración en base diaria de los cultivos."
+    },
+    "unit": "m³",
+    "category": "ResourcesExhaustion",
+    "key": "WaterFootprint"
+  },
+  {
+    "name": {
+      "en": "Water Productivity",
+      "es": "Productividad del Agua"
+    },
+    "description": {
+      "en": "It is a measure of water use derived from the inverse calculation of the water footprint.",
+      "es": "Es una medida del aprovechamiento del agua, obtenida a partir del cálculo inverso a la huella hídrica."
+    },
+    "unit": "kg / m³",
+    "category": "ResourcesExhaustion",
+    "key": "WaterProductivity"
+  }
+]

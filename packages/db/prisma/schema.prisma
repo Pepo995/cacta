@@ -1,0 +1,520 @@
+generator client {
+  provider        = "prisma-client-js"
+  binaryTargets   = ["native", "rhel-openssl-1.0.x"]
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [unaccent]
+}
+
+enum InvitationStatus {
+  Pending
+  Accepted
+  Revoked
+}
+
+enum EcoScoreGrade {
+  A
+  B
+  C
+  D
+  E
+}
+
+enum SoilType {
+  Alfisol
+  Andisol
+  Aridisol
+  Entisol
+  Gelisol
+  Histosol
+  Inceptisol
+  Mollisol
+  Oxisol
+  Spodosol
+  Ultisol
+  Vertisol
+}
+
+enum KpiCategory {
+  ClimateChange
+  EcosystemQuality
+  HumanHealth
+  ResourcesExhaustion
+}
+
+enum KpiKey {
+  TotalCarbonFootprint
+  WaterEutrophication
+  PotentialAcidification
+  WaterEcotoxicity
+  Smog
+  OzoneDepletion
+  NonCarcinogenic
+  Carcinogenic
+  UseOfElectricity
+  NonRenewables
+  MineralsAndMetals
+  WaterFootprint
+  WaterProductivity
+}
+
+enum ElectricitySourceKey {
+  Biogas
+  Water
+  Solar
+  Wind
+  MineralOil
+  Nuclear
+  FossilCarbon
+  NaturalGas
+}
+
+enum Activity {
+  Fertilizers
+  Agrochemicals
+  Machinery
+  Electricity
+  Soil
+  Other
+}
+
+enum Reference {
+  LastCampaign
+  Benchmark
+  Custom
+}
+
+model Invitation {
+  id               String           @id @default(uuid())
+  invitationStatus InvitationStatus @default(Pending)
+
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id])
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([invitationStatus])
+}
+
+model User {
+  id                String  @id @default(uuid())
+  email             String  @unique
+  firstName         String?
+  lastName          String?
+  hashedPassword    String
+  profilePictureUrl String?
+
+  pendingVerification Boolean @default(true)
+
+  organizations Organization[]
+  initiatives   Initiative[]
+  invitations   Invitation[]
+  homePageKpis  Kpi[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([firstName])
+}
+
+model AdminUser {
+  id             String @id @default(uuid())
+  email          String @unique
+  name           String
+  hashedPassword String
+}
+
+model Organization {
+  id       String  @id @default(uuid())
+  engineId String  @unique
+  name     String  @unique
+  imageUrl String?
+  country  String
+
+  users                 User[]
+  organizationCampaigns OrganizationCampaign[]
+  establishments        Establishment[]
+  invitations           Invitation[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OrganizationCampaign {
+  id        String @id @default(uuid())
+  engineId  String @unique
+  projectId String @unique
+
+  startDate DateTime
+  endDate   DateTime?
+
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  organizationId String
+
+  establishmentCampaigns            EstablishmentCampaign[]
+  organizationCampaignScores        OrganizationCampaignScore[]
+  organizationCampaignKpiBenchmarks OrganizationCampaignKpiBenchmark[]
+  initiatives                       Initiative[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([organizationId])
+}
+
+model Establishment {
+  id        String @id @default(uuid())
+  engineId  String @unique
+  name      String
+  area      Float
+  latitude  Float
+  longitude Float
+
+  soilType        SoilType
+  soilPh          Float
+  organicMaterial Float
+  nitrogen        Float
+  phosphorus      Float
+
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  organizationId String
+
+  establishmentCampaigns EstablishmentCampaign[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([organizationId])
+  @@index([name])
+}
+
+model EstablishmentCampaign {
+  id        String    @id @default(uuid())
+  startDate DateTime
+  endDate   DateTime?
+
+  establishment   Establishment @relation(fields: [establishmentId], references: [id], onDelete: Cascade)
+  establishmentId String
+
+  organizationCampaignId String
+  organizationCampaign   OrganizationCampaign @relation(fields: [organizationCampaignId], references: [id], onDelete: Cascade)
+
+  productCampaigns ProductCampaign[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([endDate])
+  @@index([startDate])
+  @@index([establishmentId])
+  @@index([organizationCampaignId])
+}
+
+model Product {
+  id         String @id @default(uuid())
+  engineId   String @unique
+  engineName String @unique
+  name       Json   @unique
+
+  cpcName String
+  cpcId   String
+
+  imageS3Key    String?
+  imageMimeType String?
+
+  productCampaigns           ProductCampaign[]
+  organizationCampaignScores OrganizationCampaignScore[]
+  productKpiBenchmarks       ProductKpiBenchmark[]
+  initiatives                Initiative[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProductCampaign {
+  id        String    @id @default(uuid())
+  startDate DateTime
+  endDate   DateTime?
+
+  harvestedAmount Float?
+  area            Float
+
+  establishmentCampaignId String
+  establishmentCampaign   EstablishmentCampaign @relation(fields: [establishmentCampaignId], references: [id], onDelete: Cascade)
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  productKpis ProductKpi[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([endDate])
+  @@index([harvestedAmount])
+  @@index([productId])
+}
+
+model Kpi {
+  id          String      @id @default(uuid())
+  name        Json        @unique
+  description Json
+  unit        String
+  category    KpiCategory
+  key         KpiKey      @unique
+
+  productKpis                       ProductKpi[]
+  initiatives                       Initiative[]
+  kpiScores                         KpiScore[]
+  organizationCampaignKpiBenchmarks OrganizationCampaignKpiBenchmark[]
+  users                             User[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([category])
+}
+
+model ProductKpi {
+  id String @id @default(uuid())
+
+  totalValue Float
+
+  kpi   Kpi    @relation(fields: [kpiId], references: [id])
+  kpiId String
+
+  productCampaign   ProductCampaign @relation(fields: [productCampaignId], references: [id], onDelete: Cascade)
+  productCampaignId String
+
+  scopes                       Scopes?
+  waterComposition             WaterComposition?
+  activityProductKpis          ActivityProductKpi[]
+  productKpiElectricitySources ProductKpiElectricitySource[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([kpiId])
+}
+
+model Scopes {
+  id     String @id @default(uuid())
+  scope1 Float
+  scope2 Float
+  scope3 Float
+
+  productKpiId String     @unique
+  productKpi   ProductKpi @relation(fields: [productKpiId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model WaterComposition {
+  id String @id @default(uuid())
+
+  greenFootprint Float
+  blueFootprint  Float
+
+  requiredWater  Float
+  rainfall       Float
+  irrigation     Float
+  lostRainfall   Float
+  lostIrrigation Float
+  balance        Float
+
+  productKpiId String     @unique
+  productKpi   ProductKpi @relation(fields: [productKpiId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model KpiScore {
+  id String @id @default(uuid())
+
+  ecoScoreValue Float
+  ecoScoreGrade EcoScoreGrade
+
+  organizationCampaignScoreId String
+  organizationCampaignScore   OrganizationCampaignScore @relation(fields: [organizationCampaignScoreId], references: [id], onDelete: Cascade)
+
+  kpiId String
+  kpi   Kpi    @relation(fields: [kpiId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OrganizationCampaignScore {
+  id String @id @default(uuid())
+
+  ecoScoreValue Float
+  ecoScoreGrade EcoScoreGrade
+
+  organizationCampaignId String
+  organizationCampaign   OrganizationCampaign @relation(fields: [organizationCampaignId], references: [id], onDelete: Cascade)
+
+  productId String?
+  product   Product? @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  kpiScores KpiScore[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([productId])
+  @@index([organizationCampaignId])
+}
+
+model OrganizationCampaignKpiBenchmark {
+  id String @id @default(uuid())
+
+  benchmark Float
+
+  organizationCampaignId String
+  organizationCampaign   OrganizationCampaign @relation(fields: [organizationCampaignId], references: [id], onDelete: Cascade)
+
+  kpiId String
+  kpi   Kpi    @relation(fields: [kpiId], references: [id], onDelete: Cascade)
+
+  productKpiBenchmarks ProductKpiBenchmark[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([organizationCampaignId])
+  @@index([kpiId])
+}
+
+model ProductKpiBenchmark {
+  id        String @id @default(uuid())
+  benchmark Float
+
+  organizationCampaignKpiBenchmarkId String
+  organizationCampaignKpiBenchmark   OrganizationCampaignKpiBenchmark @relation(fields: [organizationCampaignKpiBenchmarkId], references: [id], onDelete: Cascade)
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Initiative {
+  id          String    @id @default(uuid())
+  name        String
+  objective   Float
+  startDate   DateTime
+  endDate     DateTime
+  reference   Reference
+  description String?
+
+  organizationCampaignId String
+  organizationCampaign   OrganizationCampaign @relation(fields: [organizationCampaignId], references: [id])
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+
+  kpiId String
+  kpi   Kpi    @relation(fields: [kpiId], references: [id])
+
+  responsibleId String
+  user          User   @relation(fields: [responsibleId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([name])
+  @@index([startDate])
+  @@index([endDate])
+}
+
+model ActivityProductKpi {
+  id       String   @id @default(uuid())
+  activity Activity
+
+  totalValue Float
+
+  productKpiId String
+  productKpi   ProductKpi @relation(fields: [productKpiId], references: [id], onDelete: Cascade)
+
+  activityInputs ActivityInput[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Input {
+  id         String @id @default(uuid())
+  engineId   String @unique
+  engineName String @unique
+  name       Json   @unique
+
+  activityInputs ActivityInput[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ActivityInput {
+  totalValue     Float
+  upstream       Float
+  core           Float
+  transportation Float
+  downstream     Float
+
+  activityId String
+  activity   ActivityProductKpi @relation(fields: [activityId], references: [id], onDelete: Cascade)
+
+  inputId String
+  input   Input  @relation(fields: [inputId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@id([activityId, inputId])
+}
+
+model ElectricitySource {
+  id        String               @id @default(uuid())
+  name      Json
+  renewable Boolean
+  key       ElectricitySourceKey @unique
+
+  productKpiElectricitySources ProductKpiElectricitySource[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProductKpiElectricitySource {
+  id String @id @default(uuid())
+
+  productKpiId String
+  productKpi   ProductKpi @relation(fields: [productKpiId], references: [id], onDelete: Cascade)
+
+  electricitySourceId String
+  electricitySource   ElectricitySource @relation(fields: [electricitySourceId], references: [id], onDelete: Cascade)
+
+  value Float
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([productKpiId])
+}
+
+model SyncDate {
+  date DateTime @id
+}

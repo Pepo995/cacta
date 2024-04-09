@@ -1,0 +1,17 @@
+
+> @cacta/db@1.0.0 db:generate /Users/felipeborras/Desktop/cacta-platform/packages/db
+> pnpm with-env prisma generate
+
+
+> @cacta/db@1.0.0 with-env /Users/felipeborras/Desktop/cacta-platform/packages/db
+> dotenv -e ../../.env -- "prisma" "generate"
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (5.0.0 | library) to ./../../node_modules/@prisma/client in 218ms
+You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+```
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
+```

@@ -1,0 +1,66 @@
+[
+  {
+    "name": {
+      "en": "Biogas",
+      "es": "Biogás"
+    },
+    "renewable": true,
+    "key": "Biogas"
+  },
+  {
+    "name": {
+      "en": "Water",
+      "es": "Hídrica"
+    },
+    "renewable": true,
+    "key": "Water"
+  },
+  {
+    "name": {
+      "en": "Solar",
+      "es": "Solar"
+    },
+    "renewable": true,
+    "key": "Solar"
+  },
+  {
+    "name": {
+      "en": "Wind",
+      "es": "Eólica"
+    },
+    "renewable": true,
+    "key": "Wind"
+  },
+  {
+    "name": {
+      "en": "Mineral Oil",
+      "es": "Aceite Mineral"
+    },
+    "renewable": false,
+    "key": "MineralOil"
+  },
+  {
+    "name": {
+      "en": "Nuclear",
+      "es": "Nuclear"
+    },
+    "renewable": false,
+    "key": "Nuclear"
+  },
+  {
+    "name": {
+      "en": "Fossil Carbon",
+      "es": "Carbón Fósil"
+    },
+    "renewable": false,
+    "key": "FossilCarbon"
+  },
+  {
+    "name": {
+      "en": "Natural Gas",
+      "es": "Gas Natural"
+    },
+    "renewable": false,
+    "key": "NaturalGas"
+  }
+]

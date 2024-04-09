@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* grays */
+    --gray900: #161c24;
+    --gray800: #212b36;
+    --gray700: #454f5b;
+    --gray600: #637381;
+    --gray500: #919eab;
+    --gray400: #c4cdd5;
+    --gray300: #dfe3e8;
+    --gray200: #f4f6f8;
+    --gray100: #f9fafb;
+
+    /* grays with transparency */
+    --gray_32: #919eab52;
+    --gray_24: #919eab3d;
+    --gray_16: #919eab29;
+    --gray_8: #919eab14;
+
+    /* whites with transparency */
+    --white: #ffffff;
+    --white_32: #00000052;
+    --white_24: #0000003d;
+    --white_16: #00000029;
+    --white_8: #00000014;
+
+    /* secondary */
+    --secondary: #8e33ff;
+    --secondaryLighter: #efd6ff;
+    --secondaryLight: #c684ff;
+    --secondaryDark: #5119b7;
+    --secondaryDarker: #27097a;
+
+    /* success */
+    --success: #22c55e;
+    --successLighter: #d3fcd2;
+    --successLight: #77ed8b;
+    --successDark: #118d57;
+    --successDarker: #065e49;
+
+    /* warning */
+    --warning: #ffab00;
+    --warningLighter: #fff5cc;
+    --warningLight: #ffd666;
+    --warningDark: #b76e00;
+    --warningDarker: #7a4100;
+
+    /* error */
+    --error: #ff5630;
+    --errorLighter: #ffe9d5;
+    --errorLight: #ffac82;
+    --errorDark: #b71d18;
+    --errorDarker: #7a0916;
+
+    /* info */
+    --info: #00b8d9;
+    --info_8: #00b8d914;
+    --info_16: #00b8d929;
+    --infoDark: #006c9c;
+
+    --background: var(--gray200);
+    --foreground: var(--gray800);
+    --highlights: #ffffff;
+
+    --muted: var(--gray200);
+    --muted-foreground: var(--gray800);
+
+    --popover: #ffffff;
+    --popover-foreground: var(--gray800);
+
+    --card: #ffffff;
+    --card-foreground: var(--gray800);
+
+    --border: var(--gray600);
+
+    --primary: var(--gray200);
+    --primary-foreground: var(--gray900);
+
+    --secondary-foreground: var(--gray200);
+
+    --tertiary: var(--gray400);
+    --tertiary-foreground: var(--gray800);
+
+    --disabled: var(--gray500);
+    --disabled-foreground: var(--gray800);
+
+    --success-foreground: var(--white);
+
+    --alert-success: var(--success);
+    --alert-success-foreground: var(--gray900);
+
+    --alert-error: var(--error);
+    --alert-error-foreground: var(--gray900);
+
+    --alert-warning: var(--warning);
+    --alert-warning-foreground: var(--gray900);
+
+    --cancel: var(--gray500);
+    --cancel-foreground: var(--gray900);
+
+    --warning-foreground: var(--gray900);
+
+    --accent: var(--gray400);
+    --accent-foreground: var(--gray900);
+
+    --destructive: var(--error);
+    --destructive-foreground: var(--white);
+
+    --ring: var(--gray400);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  html {
+    font-family: Poppins;
+  }
+}

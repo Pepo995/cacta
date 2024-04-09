@@ -1,0 +1,75 @@
+
+> @cacta/nextjs@1.0.0 build /Users/felipeborras/Desktop/cacta-platform/apps/nextjs
+> pnpm with-env next build
+
+
+> @cacta/nextjs@1.0.0 with-env /Users/felipeborras/Desktop/cacta-platform/apps/nextjs
+> dotenv -e ../../.env -- "next" "build"
+
+   Linting and checking validity of types ...
+
+./src/server/api/routers/download.ts
+45:13  Warning: 'organizationId' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+47:13  Warning: 'organizationCampaignEngineId' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Collecting page data ...
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+warn(prisma) Conflict for env vars DATABASE_URL, NEXTAUTH_URL, NEXTAUTH_SECRET, NEXT_PUBLIC_MAPS_API_KEY, IMAGE_BUCKET_AWS_REGION, IMAGE_BUCKET_NAME, EMAIL_PORT, EMAIL_USERNAME, EMAIL_PASSWORD, EMAIL_SENDER, USE_SES, SES_ACCESS_KEY, SES_SECRET_ACCESS_KEY, SES_EMAIL_REGION, NEXT_PUBLIC_BASE_URL in ../../.env and ../../packages/db/.env
+Env vars from ../../packages/db/.env overwrite the ones from ../../.env
+      
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (pages)                              Size     First Load JS
+┌ λ /                                      4.2 kB          302 kB
+├   /_app                                  0 B             150 kB
+├ ○ /404                                   178 B           150 kB
+├ λ /analyze/initiative-management         5.71 kB         275 kB
+├ λ /analyze/performance                   9.28 kB         327 kB
+├ λ /api/auth/[...nextauth]                0 B             150 kB
+├ λ /api/trpc/[trpc]                       0 B             150 kB
+├ λ /complete-signup                       2.77 kB         179 kB
+├ λ /confirm-invite                        663 B           151 kB
+├ λ /monitor/summary-by-establishment      36.7 kB         287 kB
+├ λ /monitor/summary-by-product            5.35 kB         320 kB
+├ λ /report/eco-score                      3.44 kB         231 kB
+├ λ /report/product-score                  469 kB          734 kB
+├ λ /settings                              8.59 kB         270 kB
+└ λ /sign-in                               2.47 kB         178 kB
++ First Load JS shared by all              160 kB
+  ├ chunks/framework-8e279965036b6169.js   45.3 kB
+  ├ chunks/main-c7e0b5c8c76e5685.js        33.7 kB
+  ├ chunks/pages/_app-e58f81e5f620c0a5.js  69.8 kB
+  ├ chunks/webpack-21c828b96ad33382.js     1.03 kB
+  └ css/ad660d52ced49d95.css               9.71 kB
+
+ƒ Middleware                               79 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+

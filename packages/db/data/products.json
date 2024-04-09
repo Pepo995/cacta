@@ -1,0 +1,20 @@
+[
+  {
+    "name": { "en": "Lemon", "es": "Limón" },
+    "engineName": "Lemon",
+    "cpcName": "Lemon",
+    "cpcId": "lemon-01"
+  },
+  {
+    "name": { "en": "Maize", "es": "Maíz" },
+    "engineName": "Maize",
+    "cpcName": "Maize",
+    "cpcId": "maize-01"
+  },
+  {
+    "name": { "en": "Soy", "es": "Soja" },
+    "engineName": "Soy",
+    "cpcName": "Soy",
+    "cpcId": "soy-01"
+  }
+]

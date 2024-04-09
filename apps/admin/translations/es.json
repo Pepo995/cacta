@@ -1,0 +1,48 @@
+{
+  "actions": {
+    "show": "Mostrar"
+  },
+  "buttons": {
+    "save": "Guardar",
+    "login": "Iniciar sesión",
+    "changePassword": "Cambiar contraseña",
+    "cancel": "Cancelar",
+    "contactUs": "Contáctanos"
+  },
+  "properties": {
+    "email": "Email",
+    "name": "Nombre",
+    "newPassword": "Contraseña",
+    "id": "Id",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "pendingVerification": "Pendiente de verificación",
+    "unit": "Unidad",
+    "category": "Categoría",
+    "description": "Descripción",
+    "imageUrl": "Imagen",
+    "createdAt": "Fecha de creación",
+    "updatedAt": "Fecha de actualización",
+    "engineId": "Id en engine",
+    "profilePictureUrl": "Imagen de perfil"
+  },
+  "labels": {
+    "User": "Usuarios",
+    "Kpi": "KPIs",
+    "Product": "Productos",
+    "Organization": "Organizaciones",
+    "AdminUser": "Usuarios Administradores",
+    "Input": "Insumos"
+  },
+  "components": {
+    "Login": {
+      "welcomeHeader": "Bienvenido",
+      "welcomeMessage": "Ingrese sus credenciales para iniciar sesión en Cacta.",
+      "properties": {
+        "email": "Email",
+        "password": "Contraseña"
+      },
+      "loginButton": "Iniciar Sesión"
+    }
+  }
+}

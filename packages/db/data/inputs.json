@@ -1,0 +1,37 @@
+[
+  {
+    "engineName": "Input 1",
+    "name": {
+      "en": "Input 1",
+      "es": "Insumo 1"
+    }
+  },
+  {
+    "engineName": "Input 2",
+    "name": {
+      "en": "Input 2",
+      "es": "Insumo 2"
+    }
+  },
+  {
+    "engineName": "Input 3",
+    "name": {
+      "en": "Input 3",
+      "es": "Insumo 3"
+    }
+  },
+  {
+    "engineName": "Input 4",
+    "name": {
+      "en": "Input 4",
+      "es": "Insumo 4"
+    }
+  },
+  {
+    "engineName": "Input 5",
+    "name": {
+      "en": "Input 5",
+      "es": "Insumo 5"
+    }
+  }
+]

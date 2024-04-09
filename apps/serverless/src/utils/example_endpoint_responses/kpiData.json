@@ -1,0 +1,725 @@
+{
+  "organizationCampaigns": [
+    {
+      "organizationCampaignEngineId": "orgcamp001",
+      "startDate": "2023-01-01T00:00:00Z",
+      "endDate": "2023-12-31T23:59:59Z",
+      "deletedAt": null,
+      "establishmentCampaigns": [
+        {
+          "establishmentEngineId": "1",
+          "startDate": "2023-01-15T00:00:00Z",
+          "endDate": "2023-12-15T23:59:59Z",
+          "productCampaigns": [
+            {
+              "productEngineId": "1",
+              "startDate": "2023-02-01T00:00:00Z",
+              "endDate": "2023-11-30T23:59:59Z",
+              "harvestedAmount": 1500.0,
+              "area": 50.0,
+              "productKpis": [
+                {
+                  "kpiKey": "TotalCarbonFootprint",
+                  "totalValue": 30.0,
+                  "activities": [
+                    {
+                      "activity": "Fertilizers",
+                      "totalValue": 30.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 10.0,
+                          "upstream": 2.0,
+                          "transportation": 3.0,
+                          "core": 4.0,
+                          "downstream": 1.0
+                        },
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 20.0,
+                          "upstream": 3.0,
+                          "transportation": 4.0,
+                          "core": 5.0,
+                          "downstream": 8.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": {
+                    "scope1": 10.0,
+                    "scope2": 8.0,
+                    "scope3": 12.0
+                  }
+                },
+                {
+                  "kpiKey": "WaterEutrophication",
+                  "totalValue": 59.0,
+                  "activities": [
+                    {
+                      "activity": "Agrochemicals",
+                      "totalValue": 25.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 12.0,
+                          "upstream": 2.5,
+                          "transportation": 4.5,
+                          "core": 3.5,
+                          "downstream": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "activity": "Fertilizers",
+                      "totalValue": 34.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 10.0,
+                          "upstream": 4.0,
+                          "transportation": 10.0,
+                          "core": 4.5,
+                          "downstream": 5.5
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "PotentialAcidification",
+                  "totalValue": 35.0,
+                  "activities": [
+                    {
+                      "activity": "Fertilizers",
+                      "totalValue": 35.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 18.0,
+                          "upstream": 4.0,
+                          "transportation": 5.0,
+                          "core": 6.0,
+                          "downstream": 2.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "WaterEcotoxicity",
+                  "totalValue": 28.0,
+                  "activities": [
+                    {
+                      "activity": "Agrochemicals",
+                      "totalValue": 28.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 13.0,
+                          "upstream": 3.0,
+                          "transportation": 5.0,
+                          "core": 4.0,
+                          "downstream": 1.0
+                        },
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 15.0,
+                          "upstream": 4.0,
+                          "transportation": 6.0,
+                          "core": 4.0,
+                          "downstream": 1.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "Smog",
+                  "totalValue": 40.0,
+                  "activities": [
+                    {
+                      "activity": "Machinery",
+                      "totalValue": 40.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 20.0,
+                          "upstream": 5.0,
+                          "transportation": 7.0,
+                          "core": 5.0,
+                          "downstream": 3.0
+                        }
+                      ]
+                    },
+                    {
+                      "activity": "Electricity",
+                      "totalValue": 20.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 20.0,
+                          "upstream": 5.0,
+                          "transportation": 7.0,
+                          "core": 5.0,
+                          "downstream": 3.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "OzoneDepletion",
+                  "totalValue": 20.0,
+                  "activities": [
+                    {
+                      "activity": "Machinery",
+                      "totalValue": 20.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 20.0,
+                          "upstream": 5.0,
+                          "transportation": 6.0,
+                          "core": 5.0,
+                          "downstream": 4.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "NonCarcinogenic",
+                  "totalValue": 30.0,
+                  "activities": [
+                    {
+                      "activity": "Electricity",
+                      "totalValue": 30.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 30.0,
+                          "upstream": 8.0,
+                          "transportation": 12.0,
+                          "core": 6.0,
+                          "downstream": 4.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "Carcinogenic",
+                  "totalValue": 60.0,
+                  "activities": [
+                    {
+                      "activity": "Electricity",
+                      "totalValue": 60.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 35.0,
+                          "upstream": 9.0,
+                          "transportation": 13.0,
+                          "core": 7.0,
+                          "downstream": 6.0
+                        },
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 25.0,
+                          "upstream": 5.0,
+                          "transportation": 10.0,
+                          "core": 5.0,
+                          "downstream": 5.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "NonRenewables",
+                  "totalValue": 25.0,
+                  "activities": [
+                    {
+                      "activity": "Electricity",
+                      "totalValue": 25.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 25.0,
+                          "upstream": 6.0,
+                          "transportation": 9.0,
+                          "core": 5.0,
+                          "downstream": 5.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "MineralsAndMetals",
+                  "totalValue": 60.0,
+                  "activities": [
+                    {
+                      "activity": "Electricity",
+                      "totalValue": 30.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 30.0,
+                          "upstream": 7.0,
+                          "transportation": 10.0,
+                          "core": 6.0,
+                          "downstream": 7.0
+                        }
+                      ]
+                    },
+                    {
+                      "activity": "Other",
+                      "totalValue": 30.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 30.0,
+                          "upstream": 7.0,
+                          "transportation": 10.0,
+                          "core": 6.0,
+                          "downstream": 7.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "WaterFootprint",
+                  "totalValue": 30.0,
+                  "activities": [
+                    {
+                      "activity": "Other",
+                      "totalValue": 30.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 30.0,
+                          "upstream": 8.0,
+                          "transportation": 10.0,
+                          "core": 5.0,
+                          "downstream": 7.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": {
+                    "greenFootprint": 10.0,
+                    "blueFootprint": 20.0,
+                    "requiredWater": 35.0,
+                    "rainfall": 20.0,
+                    "irrigation": 10.0,
+                    "lostRainfall": -5.0,
+                    "lostIrrigation": -15.0,
+                    "balance": -25.0
+                  },
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "WaterProductivity",
+                  "totalValue": 30.0,
+                  "activities": [
+                    {
+                      "activity": "Other",
+                      "totalValue": 30.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 30.0,
+                          "upstream": 7.0,
+                          "transportation": 10.0,
+                          "core": 6.0,
+                          "downstream": 7.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": null,
+                  "scopes": null
+                },
+                {
+                  "kpiKey": "UseOfElectricity",
+                  "totalValue": 50.0,
+                  "activities": [
+                    {
+                      "activity": "Electricity",
+                      "totalValue": 50.0,
+                      "inputs": [
+                        {
+                          "inputEngineId": "10",
+                          "totalValue": 20.0,
+                          "upstream": 5.0,
+                          "transportation": 8.0,
+                          "core": 5.0,
+                          "downstream": 2.0
+                        },
+                        {
+                          "inputEngineId": "1",
+                          "totalValue": 30.0,
+                          "upstream": 7.0,
+                          "transportation": 10.0,
+                          "core": 6.0,
+                          "downstream": 7.0
+                        }
+                      ]
+                    }
+                  ],
+                  "waterComposition": null,
+                  "electricitySources": [
+                    {
+                      "electricitySourceKey": "Biogas",
+                      "value": 10.0
+                    },
+                    {
+                      "electricitySourceKey": "Water",
+                      "value": 5.0
+                    },
+                    {
+                      "electricitySourceKey": "Solar",
+                      "value": 4.0
+                    },
+                    {
+                      "electricitySourceKey": "Wind",
+                      "value": 2.0
+                    },
+                    {
+                      "electricitySourceKey": "MineralOil",
+                      "value": 0.0
+                    },
+                    {
+                      "electricitySourceKey": "Nuclear",
+                      "value": 10.0
+                    },
+                    {
+                      "electricitySourceKey": "FossilCarbon",
+                      "value": 0.0
+                    },
+                    {
+                      "electricitySourceKey": "NaturalGas",
+                      "value": 10.0
+                    }
+                  ],
+                  "scopes": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "kpiBenchmarks": [
+        {
+          "kpiKey": "TotalCarbonFootprint",
+          "benchmark": 100.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 100.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "WaterEutrophication",
+          "benchmark": 90.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 90.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "PotentialAcidification",
+          "benchmark": 110.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 110.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "WaterEcotoxicity",
+          "benchmark": 85.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 85.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "Smog",
+          "benchmark": 120.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 120.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "OzoneDepletion",
+          "benchmark": 95.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 95.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "NonCarcinogenic",
+          "benchmark": 105.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 105.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "Carcinogenic",
+          "benchmark": 125.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 125.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "UseOfElectricity",
+          "benchmark": 80.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 80.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "NonRenewables",
+          "benchmark": 110.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 110.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "MineralsAndMetals",
+          "benchmark": 115.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 115.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "WaterFootprint",
+          "benchmark": 95.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 95.0
+            }
+          ]
+        },
+        {
+          "kpiKey": "WaterProductivity",
+          "benchmark": 105.0,
+          "productKpiBenchmarks": [
+            {
+              "productEngineId": "1",
+              "benchmark": 105.0
+            }
+          ]
+        }
+      ],
+      "ecoScores": [
+        {
+          "ecoScoreValue": 80.0,
+          "ecoScoreGrade": "C",
+          "productEngineId": null,
+          "kpiEcoScores": [
+            {
+              "kpiKey": "TotalCarbonFootprint",
+              "ecoScoreValue": 75.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "WaterEutrophication",
+              "ecoScoreValue": 80.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "PotentialAcidification",
+              "ecoScoreValue": 65.0,
+              "ecoScoreGrade": "C"
+            },
+            {
+              "kpiKey": "WaterEcotoxicity",
+              "ecoScoreValue": 85.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "Smog",
+              "ecoScoreValue": 70.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "OzoneDepletion",
+              "ecoScoreValue": 75.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "NonCarcinogenic",
+              "ecoScoreValue": 60.0,
+              "ecoScoreGrade": "D"
+            },
+            {
+              "kpiKey": "Carcinogenic",
+              "ecoScoreValue": 65.0,
+              "ecoScoreGrade": "C"
+            },
+            {
+              "kpiKey": "UseOfElectricity",
+              "ecoScoreValue": 90.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "NonRenewables",
+              "ecoScoreValue": 75.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "MineralsAndMetals",
+              "ecoScoreValue": 70.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "WaterFootprint",
+              "ecoScoreValue": 80.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "WaterProductivity",
+              "ecoScoreValue": 65.0,
+              "ecoScoreGrade": "C"
+            }
+          ]
+        },
+        {
+          "ecoScoreValue": 75.0,
+          "ecoScoreGrade": "B",
+          "productEngineId": "1",
+          "kpiEcoScores": [
+            {
+              "kpiKey": "TotalCarbonFootprint",
+              "ecoScoreValue": 75.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "WaterEutrophication",
+              "ecoScoreValue": 80.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "PotentialAcidification",
+              "ecoScoreValue": 65.0,
+              "ecoScoreGrade": "C"
+            },
+            {
+              "kpiKey": "WaterEcotoxicity",
+              "ecoScoreValue": 85.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "Smog",
+              "ecoScoreValue": 70.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "OzoneDepletion",
+              "ecoScoreValue": 75.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "NonCarcinogenic",
+              "ecoScoreValue": 60.0,
+              "ecoScoreGrade": "D"
+            },
+            {
+              "kpiKey": "Carcinogenic",
+              "ecoScoreValue": 65.0,
+              "ecoScoreGrade": "C"
+            },
+            {
+              "kpiKey": "UseOfElectricity",
+              "ecoScoreValue": 90.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "NonRenewables",
+              "ecoScoreValue": 75.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "MineralsAndMetals",
+              "ecoScoreValue": 70.0,
+              "ecoScoreGrade": "B"
+            },
+            {
+              "kpiKey": "WaterFootprint",
+              "ecoScoreValue": 80.0,
+              "ecoScoreGrade": "A"
+            },
+            {
+              "kpiKey": "WaterProductivity",
+              "ecoScoreValue": 65.0,
+              "ecoScoreGrade": "C"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

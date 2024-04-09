@@ -1,0 +1,416 @@
+{
+  "auth": {
+    "signIn": {
+      "title": "Welcome!",
+      "subtitle": "Please enter your credentials to access your company's portal.",
+      "submit": "Sign in",
+      "email": "Email",
+      "password": "Password",
+      "signUp": "Sign up here.",
+      "errorToast": {
+        "title": "Error",
+        "message": "Invalid credentials. Please try again."
+      }
+    },
+    "confirmAccount": {
+      "password": "New password",
+      "confirmPassword": "Repeat new password",
+      "title": "Create your password",
+      "subtitle": "Before entering the platform, create your new password. Keep in mind that it should at least contain 1 uppercase, 1 lowercase and 1 number.",
+      "passwordFormatError": "Password must contain at least 1 uppercase, 1 lowercase and 1 number.",
+      "submit": "Change password",
+      "error": "An error occurred while confirming your account. Please try again.",
+      "success": "Your account was confirmed successfully."
+    },
+    "copyright": "Copyright © 2022 Cacta Sustainability Solutions. All rights reserved."
+  },
+  "sidebar": {
+    "home": "Home",
+    "monitor": "Monitor",
+    "summaryByEstablishment": "By establishment",
+    "summaryByProduct": "By product",
+    "analyze": "Analysis",
+    "report": "Reports",
+    "categories": "Categories",
+    "performancePerKpi": "Performance per KPI",
+    "initiativeManagement": "Action Plan",
+    "ecoScore": "Eco Score",
+    "productScore": "Product Scorecard",
+    "personalSettings": "Personal settings"
+  },
+  "text": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "signOut": "Sign Out",
+    "seeMore": "See More.",
+    "present": "Present",
+    "language": "Language"
+  },
+  "navigationTab": {
+    "climateChange": "Climate Change",
+    "ecosystemQuality": "Ecosystem Quality",
+    "humanHealth": "Human Health",
+    "resourcesExhaustion": "Resource Depletion",
+    "actualInitiatives": "Current initiatives",
+    "pastInitiatives": "Past initiatives"
+  },
+  "dataTable": {
+    "searchPlaceholder": "Search...",
+    "view": "View",
+    "noResults": "No results.",
+    "rowsPerPage": "Rows per page",
+    "pageCounter": "{actualPage} of {totalPages}",
+    "goToPreviousPage": "Go to previous page",
+    "goToNextPage": "Go to next page"
+  },
+  "uploadImage": {
+    "uploadPhoto": "Upload photo",
+    "imageAlt": "announcement image",
+    "allowedFormats": "Allowed *.jpeg, *.jpg, *.png, *.gif",
+    "maxSize": "Max size of 3.1 MB"
+  },
+  "autocompleteInput": {
+    "add": "Add new {name}"
+  },
+  "errors": {
+    "required": "Field required",
+    "requiredWithName": "Field \"{name}\" is required",
+    "min": "Field \"{name}\" must have at least { min, plural, =1 {one character} other {# characters} }",
+    "max": "Field \"{name}\" must have at most { max, plural, =1 {one character} other {# characters} }",
+    "format": "Field \"{name}\" must be {format}",
+    "invalid": "Field invalid",
+    "invalidWithName": "Field \"{name}\" invalid",
+    "passwordMatchError": "Passwords do not match",
+    "invalidFormat": "Invalid file format. Allowed: {formats}",
+    "invalidSize": "File is too big. Max size is {size}",
+    "invalidDateFormat": "The date format must be dd/mm/yyyy",
+    "invalidEmail": "Invalid email format",
+    "incorrectPassword": "Incorrect password",
+    "incorrectReference": "No other organization campaign was found to compare with",
+    "incorrectBenchmark": "There is no benchmark assigned for this kpi",
+    "somethingWentWrong": "Something went wrong. Please try again later or contact support if the problem persists.",
+    "downloadPdfError": "Could not download the pdf"
+  },
+  "cards": {
+    "metricsCard": {
+      "landMetrics": "Land metrics",
+      "environmentalMetrics": "Soil metrics",
+      "parameter": "Parameter",
+      "value": "Value",
+      "totalArea": "Total area",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "soilType": "Soil type",
+      "soilPh": "Soil pH",
+      "organicMaterial": "Organic material",
+      "nitrogen": "Nitrogen in soil",
+      "phosphorus": "Phosphorus in soil"
+    },
+    "monitorCard": {
+      "vsTarget": "vs. Benchmark"
+    },
+    "barChartHydronicCard": {
+      "title": "Composition of Water Footprint"
+    },
+    "barChartGHGCard": {
+      "title": "GHG classification",
+      "subtitle": "Based on GHG Protocol",
+      "information": {
+        "title": "GHG classification",
+        "description": "GHG Protocol: The GHG Protocol is a global initiative developed by the World Resources Institute (WRI) and the World Business Council for Sustainable Development (WBCSD). Its primary goal is to provide a global standard for accounting for and managing greenhouse gas emissions from human activities. In this, carbon emissions are classified according to:",
+        "s1": "S1 or Scope 1: Type 1 carbon emissions are called direct. These are related to all activities controlled by the reporting company. Generally, field activities belong to this group.",
+        "s2": "S2 or Scope 2: Type 2 emissions are those related to the generation of electricity, heat or steam that is purchased from a third party by the reporting company.",
+        "s3": "S3 or Scope 3: Finally, type 3 carbon emissions are those remaining indirect emissions. These are related to the supply and production chain of the inputs that are acquired by the reporting company."
+      }
+    }
+  },
+  "uncompletedCampaign": {
+    "title": "There are no products with a finished campaign yet, so we don't have results to display in this section."
+  },
+  "filters": {
+    "title": "Select a product and KPI to analyze",
+    "activity": {
+      "viewAll": "View All",
+      "Fertilizers": "Fertilizers",
+      "Agrochemicals": "Agrochemicals",
+      "Electricity": "Electricity",
+      "Machinery": "Machinery",
+      "Soil": "Soil",
+      "Other": "Others"
+    }
+  },
+  "polarChart": {
+    "benchmark": "Benchmark",
+    "categories": {
+      "ClimateChange": "Climate \nChange",
+      "EcosystemQuality": "Ecosystem \nQuality",
+      "HumanHealth": "Human \nHealth",
+      "ResourcesExhaustion": "Resources \nDepletion"
+    }
+  },
+  "map": {
+    "allEstablishments": "All establishments"
+  },
+  "homePage": {
+    "welcome": "Welcome, {userName}!"
+  },
+  "switchTabs": {
+    "intensity": "Intensity",
+    "absolute": "Absolute",
+    "viewPanel": "Panel View",
+    "viewStages": "Stages View"
+  },
+  "pageTitles": {
+    "home": "Welcome",
+    "summaryByProduct": "Summary by product",
+    "summaryByEstablishment": "Summary by establishment",
+    "ecoScore": "Eco Score",
+    "initiativeManagement": "Action plan",
+    "performancePerKpi": "Performance per KPI",
+    "productScore": "Product scorecard",
+    "personalSettings": "Personal settings"
+  },
+  "monitor": {
+    "summaryByProduct": {
+      "kpiResults": "KPI Results",
+      "productPerformance": "Product performance",
+      "productContribution": "Product's contribution to KPI",
+      "productImpact": "Products impact in {unit}",
+      "ongoingCampaign": "Ongoing campaign",
+      "ongoingCampaignMessage": "Results include products with ongoing campaigns.",
+      "pleaseSelect": "Please select a product."
+    },
+    "summaryByEstablishment": {
+      "title": "Summary by establishment",
+      "climateChange": {
+        "carbonFootprint": "Carbon Footprint | Total"
+      }
+    }
+  },
+  "waterFootprints": {
+    "greenFootprint": "Green",
+    "blueFootprint": "Blue"
+  },
+  "analyze": {
+    "initiativeManagement": {
+      "all": "All",
+      "pickDateRange": "Choose a date range",
+      "tableTitles": {
+        "name": "Name",
+        "category": "Category",
+        "kpi": "KPI",
+        "product": "Product",
+        "reference": "Reference",
+        "establishment": "Establishment",
+        "objectiveIfCustom": "Target ({unit}/ton)",
+        "objectiveIfNotCustom": "Objective reduction (%)",
+        "objective": "Target",
+        "unit": "Unit",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "performance": "Result",
+        "responsible": "Responsible",
+        "description": "Description",
+        "actions": "Actions"
+      },
+      "newInitiative": "New initiative",
+      "modalDescription": "Complete the neccesary information to create a new initiative.",
+      "updateModalDescription": "Fill out the necessary information to update the action plan.",
+      "ongoingCampaign": "ongoing campaign",
+      "required": {
+        "name": "You must assign a name to the initiative to continue.",
+        "kpi": "You must select a KPI.",
+        "product": "You must select a product.",
+        "reference": "You must select a reference.",
+        "objective": "You must assign a KPI goal to the initiative.",
+        "startDate": "You must select a start date.",
+        "endDate": "You must select an end date.",
+        "validDates": "It must be after the start date.",
+        "responsible": "You must assign someone responsible for the initiative.",
+        "establishment": "You must select an establishment.",
+        "min": "This field is required.",
+        "max": "This field has a maximum of {max} characters.",
+        "invalidPercentageFormat": "The value must be between 0 and 100"
+      },
+      "successMessage": "Initiative created successfully.",
+      "errorMessage": "Could not create initiative.",
+      "createInitiative": "Create initiative",
+      "dismissInitiative": "Dismiss",
+      "deleteInitiative": "Delete initiative",
+      "deleteConfirmation": "Are you sure you want to delete this initiative?",
+      "confirmedDelete": "Initiative deleted successfully.",
+      "errorDeletingInitiative": "Could not delete initiative.",
+      "updateInitiative": "Update initiative",
+      "confirmedUpdate": "Initiative updated successfully.",
+      "errorUpdatingInitiative": "Could not update initiative."
+    }
+  },
+  "kpiCategory": {
+    "ClimateChange": "Climate Change",
+    "EcosystemQuality": "Ecosystem Quality",
+    "HumanHealth": "Human Health",
+    "ResourcesExhaustion": "Resource Depletion"
+  },
+  "performancePerKpi": {
+    "viewPanel": {
+      "title": "Performance based on selected KPI",
+      "inputContribution": "Inputs' contribution",
+      "selectAProduct": "Select a product",
+      "generationSources": "Generation Sources",
+      "hydricBalance": "Hydric Balance",
+      "inmm": "In mm",
+      "campaign": "Campaign {startDate} - {endDate}"
+    },
+    "viewStages": {
+      "chartSubTitle": "KPI contribution by stage",
+      "step1Title": "Inputs' production",
+      "step2Title": "Supply chain",
+      "step3Title": "Field activities",
+      "pleaseSelectKpi": "Please select a KPI."
+    }
+  },
+  "electricity": {
+    "renewable": "Renewable",
+    "nonRenewable": "Non Renewable"
+  },
+  "sustainableGoals": {
+    "title": {
+      "ClimateChange": "Climate Action",
+      "EcosystemQuality": "Life Below Water",
+      "HumanHealth": "Good Health and Well-Being",
+      "ResourcesExhaustion": "Responsible Consumption and Production"
+    },
+    "description": {
+      "ClimateChange": "You are contributing to the reduction of global warming, according to the Paris Agreement.",
+      "EcosystemQuality": "You are helping to protect marine biodiversity, essential for the health of people and our planet.",
+      "HumanHealth": "Ensuring a healthy life and promoting well-being is essential for sustainable development.",
+      "ResourcesExhaustion": "Sustainable consumption and production involve doing more and better with less."
+    }
+  },
+  "waterComposition": {
+    "requiredWater": "Required\nWater",
+    "rainfall": "Rainfall",
+    "irrigation": "Irrigation",
+    "lostRainfall": "Lost\nRainfall",
+    "lostIrrigation": "Lost\nIrrigation",
+    "balance": "Balance"
+  },
+  "filter": {
+    "search": "Search..."
+  },
+  "report": {
+    "ecoScore": {
+      "resultsTitle": "General Results {productName}",
+      "campaignPeriod": "Campaign {startDate} - {endDate}",
+      "resultsSummary": "Results Summary",
+      "table": {
+        "area": "Category",
+        "indicator": "Indicator",
+        "result": "Result",
+        "score": "Score",
+        "previousCampaign": "Previous campaign"
+      },
+      "selectCampaign": "Select a campaign",
+      "present": "Present",
+      "allProducts": "All products",
+      "informationCard": "Showing {listedProducts}/{totalProducts} products: only harvested products are considered."
+    },
+    "scoreCard": {
+      "tableTitles": {
+        "product": "Product",
+        "campaign": "Campaign",
+        "functionalUnit": "Functional Unit",
+        "actions": "Actions"
+      },
+      "searchPlaceholder": "Search for a product...",
+      "modal": {
+        "parameter": "Parameter",
+        "unit": "Unit",
+        "upstream": "Upstream",
+        "core": "Core",
+        "downstream": "Downstream",
+        "total": "Total",
+        "title": "Product scorecard - {product} | 1.00 kg",
+        "description": "Campaign {startDate} - {endDate}",
+        "mnd": "NDM",
+        "mndFooter": "NDM: Undeclared module"
+      }
+    }
+  },
+  "downloadModal": {
+    "title": "Download Information",
+    "description": "Please select a campaign and a file format to download the complete information from the calculation of indicators",
+    "selectFormat": "File Format",
+    "selectCampaing": "Campaign",
+    "button": "Download",
+    "downloadSuccess": "File downloaded successfully",
+    "downloadError": "Error downloading file"
+  },
+  "usersList": {
+    "title": "Platform Access",
+    "editAccesses": "Edit Access",
+    "invite": "Invite Users",
+    "inviteDescription": "Indicate the email address of all collaborators who require access to the platform.",
+    "send": "Send",
+    "accesses": "Access",
+    "removeAccess": "Remove Access",
+    "status": {
+      "pending": "pending"
+    },
+    "deleteUserModal": {
+      "title": "Remove User Access",
+      "description": "Are you sure you wish to revoke access for this user?",
+      "success": "User's access revoked successfully",
+      "error": "Error revoking user's access"
+    },
+    "inviteError": {
+      "pendingInvitation": "This user has a pending invitation.",
+      "userInOtherOrganization": "This user joined another organization.",
+      "userInThisOrganization": "This user has access to the organization.",
+      "genericError": "Error sending invitation."
+    },
+    "inviteSuccess": "Invitation sent successfully.",
+    "acceptInvite": {
+      "error": "Error: Invalid invitation."
+    }
+  },
+  "settings": {
+    "personalInformation": {
+      "title": "Personal information",
+      "firstName": "Name",
+      "lastName": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "changePassword": "Change Password",
+      "saveChanges": "Save Changes",
+      "confirmedUpdate": "Profile updated successfully.",
+      "errorUpdatingProfile": "Could not update profile.",
+      "editInformation": "Edit information"
+    },
+    "changePassword": {
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "subtitle": "Please confirm your current password and enter the new one with at least 8 characters.",
+      "submit": "Change password",
+      "error": "An error occurred while confirming your account. Please try again.",
+      "success": "Password updated successfully.",
+      "currentPassword": "Current Password"
+    }
+  },
+  "selectHomePageKpis": {
+    "title": "Select KPIs to visualize",
+    "clear": "Clear",
+    "removeLastKpiError": "At least one KPI must be selected.",
+    "removeKpiError": "Error adding KPI.",
+    "addKpiError": "Error removing KPI.",
+    "resetKpisError": "Error reseting KPIs.",
+    "removeKpiSuccess": "KPI removed successfully.",
+    "addKpiSuccess": "KPI added successfully.",
+    "resetKpisSuccess": "KPIs reset successfully."
+  },
+  "reference": {
+    "LastCampaign": "Last campaign",
+    "Benchmark": "Benchmark",
+    "Custom": "Custom"
+  }
+}
